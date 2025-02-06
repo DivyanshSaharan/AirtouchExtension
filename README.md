@@ -41,7 +41,7 @@ cd airtouch-extension
 
 ## Extension UI
 <p align="center">
-  ![Extension Screenshot](assets/extensionUI.png)
+  <img src="assets/extensionUI.png" alt="Gesture Example" width="400">
 </p>
 
 
