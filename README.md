@@ -40,6 +40,8 @@ cd airtouch-extension
 
 
 ## Extension UI
-![Extension Screenshot](assets/extensionUI.png)
+<p align="center">
+  ![Extension Screenshot](assets/extensionUI.png)
+</p>
 
 
