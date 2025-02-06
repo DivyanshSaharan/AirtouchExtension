@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="UTF-8">
+<title>Air Touch</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="libs/tf.min.js"></script>
+<script src="background.js"></script>
+</head>
+
+<body>
+  <h1>Air Touch</h1>
+  <div id="complete">
+  <section class="top-section" id="top-section">
+
+    <div class="webcam-container">
+        <div class="webcam-outer-wrapper" id="webcam-outer-wrapper">
+          <div id="webcam-inner-wrapper" class="webcam-inner-wrapper center">
+            <div id="no-webcam" class="hide">
+              <p>No webcam found.</p>
+              <p>You will need a webcam device to use this demo.</p>
+            </div>
+            <video autoplay playsinline muted width="224px" height="224px" id="webcam" ></video>
+          </div>
+      </div>
+    </div>
+
+    <div class="right-button-container">
+
+        <button id="train" class="train-button disabled"><span id="train-status">TRAIN MODEL</span></button>
+
+        <button class="test-button disabled" id="predict">Start</button>
+        <button class="stop-button hide" id="stop-predict">Stop</button>
+
+    </div>
+
+  </section>
+
+  <section id="bottom-section" class="bottom-section">
+    <div class="control-button-wrapper">
+      <div class="control-inner-wrapper" id="up-button">
+      <div class="control-button"  id="up">
+        <div class="control-icon center" id="up-icon"><div><img src="assets/up.svg"/></div>UP</div>
+        <div class="add-icon invisible" id="up-add-icon">
+          <img class="center" src="assets/icon.svg"/>
+        </div>
+        <canvas width="224" height="224" class="thumb hide" id="up-thumb"></canvas>
+      </div>
+      </div>
+      <div class="sample-count" id="up-total"><img src="assets/invalid-name.svg"/></div>
+
+    </div>
+    <div class="control-button-wrapper">
+      <div class="control-inner-wrapper" id="down-button">
+      <div class="control-button" id="down">
+        <div class="control-icon center" id="down-icon"><div><img src="assets/down.svg"/></div>DOWN</div>
+        <div class="add-icon invisible" id="down-add-icon">
+          <img class="center" src="assets/icon.svg"/></div>
+        <canvas width="224" height="224" class="thumb hide" id="down-thumb"></canvas>
+      </div>
+      </div>
+      <div class="sample-count" id="down-total"><img src="assets/invalid-name.svg"/></div>
+
+    </div>
+    <div class="control-button-wrapper">
+      <div class="control-inner-wrapper" id="left-button">
+      <div class="control-button" id="left">
+        <div class="control-icon center" id="left-icon"><div><img src="assets/left.svg"/></div>LEFT</div>
+        <div class="add-icon invisible" id="left-add-icon">
+          <img class="center" src="assets/icon.svg"/>
+        </div>
+        <canvas width="224" height="224" class="thumb hide" id="left-thumb"></canvas>
+      </div>
+    </div>
+      <div class="sample-count" id="left-total"><img src="assets/invalid-name.svg"/></div>
+
+    </div>
+    <div class="control-button-wrapper">
+      <div class="control-inner-wrapper" id="right-button">
+      <div class="control-button" id="right">
+        <div class="control-icon center" id="right-icon"><div><img src="assets/right.svg"/></div>RIGHT</div>
+        <div class="add-icon invisible" id="right-add-icon" >
+          <img class="center" src="assets/icon.svg"/>
+        </div>
+        <canvas width="224" height="224" class="thumb hide" id="right-thumb"></canvas>
+      </div>
+      </div>
+      <div class="sample-count" id="right-total"><img src="assets/invalid-name.svg"/></div>
+
+    </div>
+    <div class="control-button-wrapper">
+      <div class="control-inner-wrapper" id="pause-button">
+      <div class="control-button" id="pause">
+        <div class="control-icon center" id="pause-icon"><div><img src="assets/pause.svg"/></div>PAUSE</div>
+        <div class="add-icon invisible" id="pause-add-icon" >
+          <img class="center" src="assets/icon.svg"/>
+        </div>
+        <canvas width="224" height="224" class="thumb hide" id="pause-thumb"></canvas>
+      </div>
+      </div>
+      <div class="sample-count" id="pause-total"><img src="assets/invalid-name.svg"/></div>
+
+    </div>
+
+
+    </div>
+  </section>
+</div>
+
+</body>
+
+<script src="ui.js"></script>
+<script src="webcam.js"></script>
+<script src="controller_dataset.js"></script>
+<script src="index.js"></script>
+
+</html>
